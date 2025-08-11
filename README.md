@@ -1,9 +1,9 @@
-<h1 align="center">projectsFULLSTACK</h1>
+<h1 align="center">Vase3</h1>
 
 `main image`
 
 ## Description:
-Outline for general FULLSTACK DEVELOPMENT PROJECTs
+Study for Language Learning Models (LLM); Build a Fullstack with Retrieval-Augmented Generation (RAG) application. Basic application for fun practice and Vase building. The Expression *One Vase A day will teach you more than spending hours trying to perfectly make one vase.* 
 
 ## Technology Stack
 - **Frontend/Client:** React.js, HTML5, CSS, framework, etc.
@@ -96,10 +96,17 @@ Connect with me on <a href="https://github.com/oakHalo">Oakhalo.dev</a>
 
 ## Resources:
 
-- `Tech used and links associated`
-- `Tech used and links associated`
+- **LangChain** for large language models (LLM) [here](https://www.langchain.com/)
+    - Retrieval Augmented Generation (RAG) [here](https://python.langchain.com/docs/tutorials/rag/)
+    - LangChain, Lang[Graph](https://www.langchain.com/langgraph), Lang[Flow](https://www.langflow.org/) and Lang[Smith](https://www.langchain.com/langsmith) serve distinct but complementary roles in the development and deployment of Large Language Model (LLM) applications
+    - Supabase documents [here](https://js.langchain.com/docs/integrations/vectorstores/supabase/)
+    - Installation [here](https://js.langchain.com/docs/how_to/installation/) that can be confirmed with below command
+    ```
+    > npm list
+    ```
 
-`<examples below>`
+- **DataStax** for Generative AI App Creation and Development [here]https://www.datastax.com/)
+
 - **PostMan** for API Tests [here](https://www.postman.com/)
     - jsonwebtoken / [jwt](https://jwt.io/) for Authentification & install [here](https://www.npmjs.com/package/jsonwebtoken)
     - jwt Debugger [here](https://jwt.io/#debugger-io)
@@ -122,6 +129,7 @@ Connect with me on <a href="https://github.com/oakHalo">Oakhalo.dev</a>
 
 
 
+
 <!-- 
 ### TODO stx: 
 Future Structure (stx):
@@ -129,5 +137,11 @@ backend
 frontend
 images
 screenShots [contains video link]
+troubleShooting
+---
+https://www.youtube.com/watch?v=rQdibOsL1ps
+https://www.youtube.com/watch?v=d-VKYF4Zow0
+--
+- **Arkiv** for scientific literature and articles from Cornel [here](https://arxiv.org/)
 
 -->
