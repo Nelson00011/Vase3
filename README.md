@@ -38,6 +38,7 @@ Study for Language Learning Models (LLM); Build a Fullstack with Retrieval-Augme
 > npx create-next-app <project name>
 > cd <project name>
 > npm install @datastax/astra-db-ts langchain openai dotenv
+> npm install @langchain/community @langchain/core puppeteer
 > npm install langchain puppeteer
 > npm install ts-node
 ```
@@ -130,6 +131,21 @@ Connect with me on <a href="https://github.com/oakHalo">Oakhalo.dev</a>
 - When installing packages do it in the correct folder / level :) 
 ```
 >  "type": "module",
+```
+- **Uninstall packages** command 
+```
+> npm uninstall <package_name>
+> npm install <package-name>@<version-number>
+```
+- Overriding / resolutions outdated packages
+```
+>             "overrides": {
+              "langchain": "0.3.30"
+            }
+>            "resolutions": {
+              "langchain": "0.3.30"
+            }
+> npm install
 ```
 
 - Cleaning up Node.Modules with junk; delete node_modulus, package.json, package-lock.json CD into file to avoid issues like this! Make sure to `cd` into the correct project folder, check package folder location. 
