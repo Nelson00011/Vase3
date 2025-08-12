@@ -145,6 +145,9 @@ Connect with me on <a href="https://github.com/oakHalo">Oakhalo.dev</a>
 >            "resolutions": {
               "langchain": "0.3.30"
             }
+>           "compilerOptions": {
+            "module": "commonjs",
+            }
 > npm install
 ```
 
