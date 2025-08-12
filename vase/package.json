@@ -1,0 +1,32 @@
+{
+  "name": "vase",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "seed": "ts-node ./scripts/loadDb.ts",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@datastax/astra-db-ts": "^1.0.1",
+    "dotenv": "^17.2.1",
+    "langchain": "^0.3.30",
+    "next": "15.4.6",
+    "openai": "^5.12.2",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.4.6",
+    "typescript": "^5"
+  }
+}

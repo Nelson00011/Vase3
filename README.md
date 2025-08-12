@@ -132,7 +132,7 @@ Connect with me on <a href="https://github.com/oakHalo">Oakhalo.dev</a>
 >  "type": "module",
 ```
 
-
+- Cleaning up Node.Modules with junk; delete node_modulus, package.json, package-lock.json CD into file to avoid issues like this! Make sure to `cd` into the correct project folder, check package folder location. 
 
 
 
