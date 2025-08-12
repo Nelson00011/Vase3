@@ -35,13 +35,11 @@ Study for Language Learning Models (LLM); Build a Fullstack with Retrieval-Augme
     - Must be `cd`'d into frontend/client for install
     - MUI, `react-router-dom`, redux, formik, etc... (see resources)
 ```
-> npx create-react-app <project name>
+> npx create-next-app <project name>
 > cd <project name>
-> npm install @mui/icons-material @mui/material @emotion/styled @emotion/react
-> npm install --save react-router-dom
-> npm install react-redux @reduxjs/toolkit
-> npm install formik yup dotenv react-responsive-carousel
-> npm install --save @stripe/react-stripe-js @stripe/stripe-js
+> npm install @datastax/astra-db-ts langchain openai dotenv
+> npm install langchain puppeteer
+> npm install ts-node
 ```
 - Test front-end once pages are generated (ctrl-c to exit):
 ```
@@ -107,6 +105,10 @@ Connect with me on <a href="https://github.com/oakHalo">Oakhalo.dev</a>
 
 - **DataStax** for Generative AI App Creation and Development [here]https://www.datastax.com/)
 
+- **OpenAi** for chatGPT [here](https://openai.com/)
+    - **API Platform** [here](https://platform.openai.com/docs/overview). Embedding V3 large and Embedding V3 small. 
+     - **API keys** [here](https://platform.openai.com/settings/organization/api-keys).
+
 - **PostMan** for API Tests [here](https://www.postman.com/)
     - jsonwebtoken / [jwt](https://jwt.io/) for Authentification & install [here](https://www.npmjs.com/package/jsonwebtoken)
     - jwt Debugger [here](https://jwt.io/#debugger-io)
@@ -125,6 +127,10 @@ Connect with me on <a href="https://github.com/oakHalo">Oakhalo.dev</a>
 - `useful hints for future projects to go faster`
 - console log testing with `ctr-alt-l` 
 - Always Stay Positive & Triple Check Permissions :)
+- When installing packages do it in the correct folder / level :) 
+```
+>  "type": "module",
+```
 
 
 
