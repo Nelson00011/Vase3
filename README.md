@@ -166,4 +166,16 @@ https://www.youtube.com/watch?v=d-VKYF4Zow0
 --
 - **Arkiv** for scientific literature and articles from Cornel [here](https://arxiv.org/)
 
+- npx set-up requirements
+ESLint: Yes
+Tailwind CSS: No
+src/ directory: No
+App Router: No
+Import Alias: No
+
+npm install @datastax/astra-db-ts@1.1.0
+npm install langchain@0.1.36  
+npm install openai@4.41.0 
+
+
 -->
