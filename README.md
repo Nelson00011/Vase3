@@ -105,6 +105,7 @@ Connect with me on <a href="https://github.com/oakHalo">Oakhalo.dev</a>
     ```
 
 - **DataStax** for Generative AI App Creation and Development [here]https://www.datastax.com/)
+    - **DataAPI" Documents [here](https://docs.datastax.com/en/astra-db-serverless/api-reference/collection-methods/create-collection.html)
 
 - **OpenAi** for chatGPT [here](https://openai.com/)
     - **API Platform** [here](https://platform.openai.com/docs/overview). Embedding V3 large and Embedding V3 small. 
@@ -137,7 +138,7 @@ Connect with me on <a href="https://github.com/oakHalo">Oakhalo.dev</a>
 > npm uninstall <package_name>
 > npm install <package-name>@<version-number>
 ```
-- Overriding / resolutions outdated packages
+- Overriding / Resolutions / Conpiler outdated packages
 ```
 >             "overrides": {
               "langchain": "0.3.30"
@@ -179,6 +180,22 @@ Import Alias: No
 npm install @datastax/astra-db-ts@1.1.0
 npm install langchain@0.1.36  
 npm install openai@4.41.0 
+---
+from astrapy.info import CollectionVectorServiceOptions
+from astrapy.constants import VectorMetric
+
+collection = database.create_collection(
+    "COLLECTION_NAME",
+    metric=VectorMetric.DOT_PRODUCT,
+    dimension=1536,
+    service=CollectionVectorServiceOptions(
+        provider="openai",
+        model_name="text-embedding-3-small",
+        authentication={
+            "providerKey": "API_KEY_NAME",
+        },
+    ),
+)
 
 
 -->
