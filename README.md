@@ -106,10 +106,12 @@ Connect with me on <a href="https://github.com/oakHalo">Oakhalo.dev</a>
 
 - **DataStax** for Generative AI App Creation and Development [here]https://www.datastax.com/)
     - **DataAPI" Documents [here](https://docs.datastax.com/en/astra-db-serverless/api-reference/collection-methods/create-collection.html)
+    - **Chunking:** Let's Break It Down [here](https://www.datastax.com/blog/chunking-to-get-your-data-ai-ready)
 
 - **OpenAi** for chatGPT [here](https://openai.com/)
     - **API Platform** [here](https://platform.openai.com/docs/overview). Embedding V3 large and Embedding V3 small. 
-     - **API keys** [here](https://platform.openai.com/settings/organization/api-keys).
+    - **API keys** [here](https://platform.openai.com/settings/organization/api-keys).
+    - **Embeddings** information [here](https://platform.openai.com/docs/guides/embeddings) and get dimensions from datastrux `1536`. Additional vector info [here](https://www.datastax.com/guides/what-is-a-vector-database)
 
 - **PostMan** for API Tests [here](https://www.postman.com/)
     - jsonwebtoken / [jwt](https://jwt.io/) for Authentification & install [here](https://www.npmjs.com/package/jsonwebtoken)
@@ -181,6 +183,9 @@ npm install @datastax/astra-db-ts@1.1.0
 npm install langchain@0.1.36  
 npm install openai@4.41.0 
 ---
+strict set to false
+---
+
 from astrapy.info import CollectionVectorServiceOptions
 from astrapy.constants import VectorMetric
 
