@@ -84,7 +84,6 @@ const items = await fetch(
 ### Deployment
 
 
-
 ## Contact:
 <!--- You can add in your linkedin, medium, stack overflow, dev.to account, etc. here --->
 If you want to contact me you can reach me at <nelson@oakhalo.com>.
@@ -104,7 +103,7 @@ Connect with me on <a href="https://github.com/oakHalo">Oakhalo.dev</a>
     > npm list
     ```
 
-- **DataStax** for Generative AI App Creation and Development [here]https://www.datastax.com/)
+- **DataStax** for Generative AI App Creation and Development [here](https://www.datastax.com/)
     - **DataAPI" Documents [here](https://docs.datastax.com/en/astra-db-serverless/api-reference/collection-methods/create-collection.html)
     - **Chunking:** Let's Break It Down [here](https://www.datastax.com/blog/chunking-to-get-your-data-ai-ready)
 
