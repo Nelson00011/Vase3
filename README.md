@@ -104,7 +104,7 @@ Connect with me on <a href="https://github.com/oakHalo">Oakhalo.dev</a>
     ```
 
 - **DataStax** for Generative AI App Creation and Development [here](https://www.datastax.com/)
-    - **DataAPI" Documents [here](https://docs.datastax.com/en/astra-db-serverless/api-reference/collection-methods/create-collection.html)
+    - **DataAPI** Documents [here](https://docs.datastax.com/en/astra-db-serverless/api-reference/collection-methods/create-collection.html)
     - **Chunking:** Let's Break It Down [here](https://www.datastax.com/blog/chunking-to-get-your-data-ai-ready)
 
 - **OpenAi** for chatGPT [here](https://openai.com/)
@@ -203,3 +203,4 @@ collection = database.create_collection(
 
 
 -->
+
