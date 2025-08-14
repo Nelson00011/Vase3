@@ -64,7 +64,7 @@ const loadSampleData = async () => {
 
         const vector = embedding.data[0].embedding
 
-        const res = await.collection.insertOne({
+        const res = await collection.insertOne({
             $vector: vector, 
             text: chunk
         })
