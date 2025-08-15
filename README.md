@@ -129,6 +129,7 @@ Connect with me on <a href="https://github.com/oakHalo">Oakhalo.dev</a>
 #### **helpful hint:** 
 - `useful hints for future projects to go faster`
 - console log testing with `ctr-alt-l` 
+- Make sure to update billing where you need credits, not everything is free (give 30 minutes for account set-ups before freaking out, it is delayed)
 - Always Stay Positive & Triple Check Permissions :)
 - When installing packages do it in the correct folder / level :) 
 ```
