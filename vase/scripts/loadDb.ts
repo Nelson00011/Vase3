@@ -43,7 +43,7 @@ const splitter = new RecursiveCharacterTextSplitter({
 const createCollection = async (similarityMetric: SimilarityMetric = "dot_product") => {
     const res = await db.createCollection(ASTRA_DB_COLLECTION, {
         vector: {
-            dimensions: 1536,
+            dimension: 1536,
             metric: similarityMetric,
         }
     })
@@ -51,24 +51,30 @@ const createCollection = async (similarityMetric: SimilarityMetric = "dot_produc
 }
 
 const loadSampleData = async () => {
+
    const collection = await db.collection(ASTRA_DB_COLLECTION)
+
    for await ( const url of vaseData){
+
     const content = await scrapePage(url)
-    const chunks = await splitter.splitText(content);
+    const chunks = await splitter.splitText(content)
+
     for await (const chunk of chunks){
         const embedding = await openai.embeddings.create({
             model: "text-embedding-3-small",
             input: chunk,
-            encoding_format: "float",
-        })
+            encoding_format: "float"
+            });
 
         const vector = embedding.data[0].embedding
+        //COMMENT: vector console.log
+        console.log(vector)
 
         const res = await collection.insertOne({
             $vector: vector, 
             text: chunk
         })
-
+         //COMMENT: res console.log
         console.log(res)
 
     }
@@ -84,7 +90,7 @@ const scrapePage = async(url: string) => {
             waitUntil: "domcontentloaded"
         },
         evaluate: async (page, browser) => {
-            const results = await page.evaluate(() => document.body.innerHTML)
+            const result = await page.evaluate(() => document.body.innerHTML)
             await browser.close()
             return result
         }
@@ -94,3 +100,4 @@ const scrapePage = async(url: string) => {
 }
 
 createCollection().then(()=> loadSampleData())
+
