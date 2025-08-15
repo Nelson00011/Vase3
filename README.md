@@ -6,9 +6,9 @@
 Study for Language Learning Models (LLM); Build a Fullstack with Retrieval-Augmented Generation (RAG) application. Basic application for fun practice and Vase building. The Expression *One Vase A day will teach you more than spending hours trying to perfectly make one vase.* 
 
 ## Technology Stack
-- **Frontend/Client:** React.js, HTML5, CSS, framework, etc.
-- **API:** Api calls or external sources used
-- **Backend/Server:** node.js/express or python alternatives, include databases
+- **Frontend/Client:** Next.js, HTML5, CSS
+- **API:** LangChain, DataStrax, AstraDB, OpenAI, 
+- **Backend/Server:** Node.js, env, /express or python alternatives, include databases
 
 <h2 align="center">Video:</h2>
 
@@ -40,6 +40,7 @@ Study for Language Learning Models (LLM); Build a Fullstack with Retrieval-Augme
 > npm install @datastax/astra-db-ts langchain openai dotenv
 > npm install @langchain/community @langchain/core puppeteer
 > npm install langchain puppeteer
+> npm install ai
 > npm install ts-node
 ```
 - Test front-end once pages are generated (ctrl-c to exit):
@@ -97,11 +98,8 @@ Connect with me on <a href="https://github.com/oakHalo">Oakhalo.dev</a>
 - **LangChain** for large language models (LLM) [here](https://www.langchain.com/)
     - Retrieval Augmented Generation (RAG) [here](https://python.langchain.com/docs/tutorials/rag/)
     - LangChain, Lang[Graph](https://www.langchain.com/langgraph), Lang[Flow](https://www.langflow.org/) and Lang[Smith](https://www.langchain.com/langsmith) serve distinct but complementary roles in the development and deployment of Large Language Model (LLM) applications
-    - Supabase documents [here](https://js.langchain.com/docs/integrations/vectorstores/supabase/)
-    - Installation [here](https://js.langchain.com/docs/how_to/installation/) that can be confirmed with below command
-    ```
-    > npm list
-    ```
+    - **Puppeteer** documents [here](https://pptr.dev/)
+    - Installation [here](https://js.langchain.com/docs/how_to/installation/) that can be confirmed
 
 - **DataStax** for Generative AI App Creation and Development [here](https://www.datastax.com/)
     - **DataAPI** Documents [here](https://docs.datastax.com/en/astra-db-serverless/api-reference/collection-methods/create-collection.html)
@@ -109,6 +107,7 @@ Connect with me on <a href="https://github.com/oakHalo">Oakhalo.dev</a>
 
 - **OpenAi** for chatGPT [here](https://openai.com/)
     - **API Platform** [here](https://platform.openai.com/docs/overview). Embedding V3 large and Embedding V3 small. 
+    - **AI** npm packages [here](https://www.npmjs.com/package/ai)
     - **API keys** [here](https://platform.openai.com/settings/organization/api-keys).
     - **Embeddings** information [here](https://platform.openai.com/docs/guides/embeddings) and get dimensions from datastrux `1536`. Additional vector info [here](https://www.datastax.com/guides/what-is-a-vector-database)
 
@@ -129,9 +128,14 @@ Connect with me on <a href="https://github.com/oakHalo">Oakhalo.dev</a>
 #### **helpful hint:** 
 - `useful hints for future projects to go faster`
 - console log testing with `ctr-alt-l` 
+- confirm active packages in folder with below command: 
+    ```
+    > npm list
+    ```
 - **Make sure to update billing** in corresponding API's, not everything is free (*give 30 minutes after account set-up for it to activate*)
 - Set Timer's for data loading and transfer, so that I can anticipate future data transfer *pauses* and do research and other things during that time. 
     - **~30 minutes** for vector loading to DataStax
+- check for `s`
 - Always Stay Positive & Triple Check Permissions :)
 - When installing packages do it in the correct folder / level :) 
 ```
@@ -156,7 +160,7 @@ Connect with me on <a href="https://github.com/oakHalo">Oakhalo.dev</a>
 > npm install
 ```
 
-- Cleaning up Node.Modules with junk; delete node_modulus, package.json, package-lock.json CD into file to avoid issues like this! Make sure to `cd` into the correct project folder, check package folder location. 
+- Cleaning up Node.Modules with junk; delete node_modulus, package.json, package-lock.json `cd` into file to avoid issues like this! Make sure to `cd` into the correct project folder, check package folder location. 
 
 
 
