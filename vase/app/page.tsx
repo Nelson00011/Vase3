@@ -8,8 +8,8 @@ import { Message } from "ai"
 
 const Home = () => {
 
-    const { input, handleInputChange, HandleSubmit } = useChat();
-    
+    const { append, isLoading, messages, input, handleInputChange, HandleSubmit } = useChat();
+
     //TODO: noMessages
     const noMessages = true;
 
