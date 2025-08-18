@@ -161,9 +161,13 @@ Connect with me on <a href="https://github.com/oakHalo">Oakhalo.dev</a>
 ```
 
 - Cleaning up Node.Modules with junk; delete node_modulus, package.json, package-lock.json `cd` into file to avoid issues like this! Make sure to `cd` into the correct project folder, check package folder location. 
-    ```
-    > npm outdated
-    ```
+- Check versioning: current, wanted, latest, location with command [here](https://docs.npmjs.com/cli/v11/commands/npm-outdated)
+   
+ ```
+> npm outdated
+```
+
+- Folder Structure for applications should be double checked with `404` error. 
 
 
 <!-- 
