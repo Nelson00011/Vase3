@@ -146,7 +146,7 @@ Connect with me on <a href="https://github.com/oakHalo">Oakhalo.dev</a>
 > npm uninstall <package_name>
 > npm install <package-name>@<version-number>
 ```
-- Overriding / Resolutions / Conpiler outdated packages
+- Overriding / Resolutions / Compiler outdated packages
 ```
 >             "overrides": {
               "langchain": "0.3.30"
@@ -161,7 +161,9 @@ Connect with me on <a href="https://github.com/oakHalo">Oakhalo.dev</a>
 ```
 
 - Cleaning up Node.Modules with junk; delete node_modulus, package.json, package-lock.json `cd` into file to avoid issues like this! Make sure to `cd` into the correct project folder, check package folder location. 
-
+    ```
+    > npm outdated
+    ```
 
 
 <!-- 
