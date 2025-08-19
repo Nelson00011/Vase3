@@ -3,8 +3,8 @@
 import Image from 'next/image'
 import lotus from './assets/lotus.jpg'
 
-import { useChat } from "ai/react"
-import { Message } from "ai"
+import { useChat } from '@ai-sdk/react';
+import { Message } from "ai";
 
 const Home = () => {
     //COMMENT: Next.js App Router Resources
@@ -39,13 +39,12 @@ const Home = () => {
 
                     </>
                 )}
-                <form onSubmit={handleSubmit}>
-                    <input className="question-box" onChange={handleInputChange} value={input} placeholder="Ask me sommething..." />
+            </section>
+             <form onSubmit={handleSubmit}>
+                    <input className="question-box" onChange={handleInputChange} value={input} placeholder="Ask me something..." />
                     <input type="submit"/>
 
                 </form>
-
-            </section>
             
         </main>
     )
