@@ -107,7 +107,7 @@ Connect with me on <a href="https://github.com/oakHalo">Oakhalo.dev</a>
 
 - **OpenAi** for chatGPT [here](https://openai.com/)
     - **API Platform** [here](https://platform.openai.com/docs/overview). Embedding V3 large and Embedding V3 small. 
-    - **AI** npm packages [here](https://www.npmjs.com/package/ai)
+    - **AI** npm packages [here](https://www.npmjs.com/package/ai) and Next.js App Router [here](https://www.npmjs.com/package/ai/v/3.3.3)
     - **API keys** [here](https://platform.openai.com/settings/organization/api-keys).
     - **Embeddings** information [here](https://platform.openai.com/docs/guides/embeddings) and get dimensions from datastrux `1536`. Additional vector info [here](https://www.datastax.com/guides/what-is-a-vector-database)
 
