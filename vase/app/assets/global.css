@@ -1,8 +1,7 @@
 /* TODO: set css */
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+* {
+font-family: Verdana, Tahoma, sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {

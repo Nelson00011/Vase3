@@ -1,4 +1,4 @@
-"use client"
+'use client';
 
 import Image from 'next/image'
 import lotus from './assets/lotus.jpg'
@@ -7,8 +7,9 @@ import { useChat } from "ai/react"
 import { Message } from "ai"
 
 const Home = () => {
-
-    const { append, isLoading, messages, input, handleInputChange, HandleSubmit } = useChat();
+    //COMMENT: Next.js App Router Resources
+    const { append, messages, input, handleSubmit, handleInputChange, isLoading } =
+    useChat();
 
     //TODO: noMessages
     const noMessages = true;
@@ -16,7 +17,7 @@ const Home = () => {
     return (
         <main>
             <Image src={lotus} width={250} alt="Lotus Logo" />
-            <section>
+            <section className={noMessages ? "" : "populated" } >
                 {noMessages ? (
                     <>
                     <p className="start-text">
@@ -33,13 +34,13 @@ const Home = () => {
                     </>
                 ) : (
                     <>
-                    {/*<text bubbles/>*/}
+                    {/*<map text bubbles/> Next.js App Router Resources*/}
                     {/* <LoadingBubble /> */}
 
                     </>
                 )}
                 <form onSubmit={handleSubmit}>
-                    <input className="question-box" onChange={HandleInputChange} value={input} placeholder="Ask me sommething..." />
+                    <input className="question-box" onChange={handleInputChange} value={input} placeholder="Ask me sommething..." />
                     <input type="submit"/>
 
                 </form>
