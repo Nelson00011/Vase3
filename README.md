@@ -42,6 +42,7 @@ Study for Language Learning Models (LLM); Build a Fullstack with Retrieval-Augme
 > npm install langchain puppeteer
 > npm install ai
 > npm install ts-node
+> npm install @ai-sdk/react
 ```
 - Test front-end once pages are generated (ctrl-c to exit):
 ```
@@ -111,9 +112,13 @@ Connect with me on <a href="https://github.com/oakHalo">Oakhalo.dev</a>
         - The distinction between `ai/react` and `@ai-sdk/react` lies in the evolution and organization of the Vercel AI SDK.
         - `ai/react` (Older):
             This refers to the earlier, more general package for integrating AI functionalities into React applications within the Vercel AI SDK. It provided hooks and utilities for interacting with large language models (LLMs) and building AI-powered UIs.
-        - `@ai-sdk/react` (Current):
+        - `@ai-sdk/react` (Current - *had to be installed to allow functionality*):
             This is the modern, namespaced package within the Vercel AI SDK specifically designed for React integration. The Vercel AI SDK has adopted a modular approach, where different functionalities and framework integrations are provided through distinct, scoped packages. @ai-sdk/react contains the React-specific hooks and components, such as useChat and useCompletion, that simplify building conversational interfaces and other AI-driven features in React applications.
         - In essence, `@ai-sdk/react` is the current and recommended way to leverage the Vercel AI SDK within a React project, replacing the older ai/react package with a more organized and maintainable structure.
+        ```
+        > npm install @ai-sdk/react
+        ```
+
     - **API keys** [here](https://platform.openai.com/settings/organization/api-keys).
     - **Embeddings** information [here](https://platform.openai.com/docs/guides/embeddings) and get dimensions from datastrux `1536`. Additional vector info [here](https://www.datastax.com/guides/what-is-a-vector-database)
 
@@ -129,6 +134,7 @@ Connect with me on <a href="https://github.com/oakHalo">Oakhalo.dev</a>
 
 - Filler Text [typographic](https://generator.lorem-ipsum.info/)
     - Lorem Ipsum 
+- **ColorHexa** converter [here](https://www.colorhexa.com/) for hexadecimal (HEX), RGB, HSL
 - Google Fonts [here](https://fonts.google.com/)
 
 #### **helpful hint:** 
@@ -174,7 +180,7 @@ Connect with me on <a href="https://github.com/oakHalo">Oakhalo.dev</a>
 ```
 
 - Folder Structure for applications should be double checked with `404` error. 
-
+- Making code a comment is `Ctrl + /`
 
 <!-- 
 ### TODO stx: 
