@@ -118,6 +118,7 @@ Connect with me on <a href="https://github.com/oakHalo">Oakhalo.dev</a>
         ```
         > npm install @ai-sdk/react
         ```
+        - Generating Random keys `crypto.randomUUID()` [here](https://developer.mozilla.org/en-US/docs/Web/API/Crypto/randomUUID)
 
     - **API keys** [here](https://platform.openai.com/settings/organization/api-keys).
     - **Embeddings** information [here](https://platform.openai.com/docs/guides/embeddings) and get dimensions from datastrux `1536`. Additional vector info [here](https://www.datastax.com/guides/what-is-a-vector-database)
