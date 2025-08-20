@@ -6,13 +6,26 @@ import lotus from './assets/lotus.jpg'
 import { useChat } from '@ai-sdk/react';
 import { Message } from "ai";
 
+import Bubble from './components/Bubble';
+import LoadingBubble from './components/LoadingBubble';
+import PromptSuggestionsRow from './components/PromptSuggestionsRow';
+
 const Home = () => {
     //COMMENT: Next.js App Router Resources
     const { append, messages, input, handleSubmit, handleInputChange, isLoading } =
     useChat();
 
-    //TODO: noMessages
-    const noMessages = true;
+    const noMessages = !messages || messages.length === 0;
+
+    const handlePrompt = (promptText) => {
+        const msg: Message = {
+            id: crypto.randomUUID(),
+            context: promptText,
+            role: "user"
+        }; 
+
+        append(msg)
+    }
 
     return (
         <main>
@@ -29,19 +42,22 @@ const Home = () => {
                     </p>
                     <br>
                     </br>
-                    {/*<PromptSuggestionResponse/>*/}
+                    <PromptSuggestionsRow onPromptClick={handlePrompt} />
                     
                     </>
                 ) : (
                     <>
-                    {/*<map text bubbles/> Next.js App Router Resources*/}
-                    {/* <LoadingBubble /> */}
+                    {messages.map((message, index) => {<Bubble key={`message-${index}`} message={message} /> } )}
+                    {isLoading && <LoadingBubble />}
 
                     </>
                 )}
             </section>
              <form onSubmit={handleSubmit}>
-                    <input className="question-box" onChange={handleInputChange} value={input} placeholder="Ask me something..." />
+                    <input className="question-box" 
+                    onChange={handleInputChange} 
+                    value={input} 
+                    placeholder="Ask me something..." />
                     <input type="submit"/>
 
                 </form>
