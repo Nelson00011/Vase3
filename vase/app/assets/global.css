@@ -1,5 +1,4 @@
 /* TODO: set css */
-
 * {
 font-family: Verdana, Tahoma, sans-serif;
 }
@@ -26,6 +25,51 @@ main {
   padding: 20px;
   text-align: center;
   color: rgb(83, 83, 83);
+}
+
+section {
+  width: 100%;
+}
+
+section.populated {
+  height: 100%;
+  display: flex; 
+  flex-direction: column;
+  justify-content: flex-end; 
+  overflow: scroll; 
+}
+
+.starter-text {
+  padding: 0 80px; 
+}
+
+form {
+  height: 50px; 
+  width: 100%; 
+  display: flex; 
+  border-top: #161616 solid 2px;
+  padding-top: 20px;
+  border-radius: 0 0 10px 10px;
+  overflow: hidden;
+}
+
+input.question-box {
+  width: 85%;
+  margin-right: 15px;
+  padding: 10px; 
+  font-size: 15pxl;
+  color: #383838; 
+  border: none; 
+}
+
+/* TODO: START HERE */
+input[type=submit]{
+  width: 15%; 
+  padding: 10px; 
+  font-size: 15pxl;
+  color: #161616;
+  border: none; 
+  color: white;
 }
 
 /* TODO: consider white theme*/
