@@ -1,4 +1,3 @@
-//TODO components loading bubbles
 const LoadingBubble = () => {
 
     return (

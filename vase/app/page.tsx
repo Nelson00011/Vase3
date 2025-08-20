@@ -11,7 +11,7 @@ import LoadingBubble from './components/LoadingBubble';
 import PromptSuggestionsRow from './components/PromptSuggestionsRow';
 
 const Home = () => {
-    //COMMENT: Next.js App Router Resources
+    
     const { append, messages, input, handleSubmit, handleInputChange, isLoading } =
     useChat();
 
@@ -23,7 +23,6 @@ const Home = () => {
             context: promptText,
             role: "user"
         }; 
-
         append(msg)
     }
 

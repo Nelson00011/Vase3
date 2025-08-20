@@ -1,4 +1,3 @@
-//TODO components Prompt Suggestions
 import PromptSuggestionButton from "./PromptSuggestionButton";
 
 const PromptSuggestionsRow = ({ onPromptClick }) => {
@@ -15,7 +14,7 @@ const PromptSuggestionsRow = ({ onPromptClick }) => {
             <PromptSuggestionButton 
             key={`suggestion-${index}`}
             text={prompt}
-            onClick={onPromptClick(prompt)}
+            onClick={() => onPromptClick(prompt)}
             /> )}
         </div>
     )
