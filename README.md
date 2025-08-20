@@ -109,7 +109,7 @@ Connect with me on <a href="https://github.com/oakHalo">Oakhalo.dev</a>
 - **OpenAi** for chatGPT [here](https://openai.com/)
     - **API Platform** [here](https://platform.openai.com/docs/overview). Embedding V3 large and Embedding V3 small. 
     - **AI** npm packages [here](https://www.npmjs.com/package/ai) and Next.js App Router [here](https://www.npmjs.com/package/ai/v/3.3.3)
-        - The distinction between `ai/react` and `@ai-sdk/react` lies in the evolution and organization of the Vercel AI SDK.
+        - The distinction between `ai/react` and `@ai-sdk/react` lies in the evolution and organization of the Vercel AI SDK `useChat()` [here](https://ai-sdk.dev/docs/reference/ai-sdk-ui/use-chat).
         - `ai/react` (Older):
             This refers to the earlier, more general package for integrating AI functionalities into React applications within the Vercel AI SDK. It provided hooks and utilities for interacting with large language models (LLMs) and building AI-powered UIs.
         - `@ai-sdk/react` (Current - *had to be [installed](https://www.npmjs.com/package/ai/v/3.3.3) to allow functionality*):
@@ -225,7 +225,6 @@ collection = database.create_collection(
         },
     ),
 )
-
 
 -->
 
