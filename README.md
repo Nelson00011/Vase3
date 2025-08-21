@@ -43,6 +43,7 @@ Study for Language Learning Models (LLM); Build a Fullstack with Retrieval-Augme
 > npm install ai
 > npm install ts-node
 > npm install @ai-sdk/react
+> npx ai-elements@latest
 ```
 - Test front-end once pages are generated (ctrl-c to exit):
 ```
@@ -191,6 +192,8 @@ frontend
 images
 screenShots [contains video link]
 troubleShooting
+
+complete about section
 ---
 https://www.youtube.com/watch?v=rQdibOsL1ps
 https://www.youtube.com/watch?v=d-VKYF4Zow0
