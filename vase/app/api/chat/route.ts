@@ -1,6 +1,6 @@
 //TODO: Api set-up for chat bot.
 import OpenAI from "openai";
-import { OpenAIStream, StreamingTextResponse } from 'openai';
+import { OpenAIStream, StreamingTextResponse } from 'ai';
 import { DataAPIClient } from "@datastax/astra-db-ts";
 
 const { ASTRA_DB_NAMESPACE, 
@@ -21,12 +21,13 @@ const db = client.db(ASTRA_DB_API_ENDPOINT, {
 
 export async function POST (req: Request ){
 try {
+
     const { messages } = await req.json()
-    const latestMessage = messages[messages?.length -1]?.content
+    const latestMessage = messages[messages?.length - 1]?.content
 
     let docContext = ""
 
-    await openai.embeddings.create({
+    const embedding = await openai.embeddings.create({
         model: "text-embedding-3-small",
         input: latestMessage,
         encoding_format: "float"
@@ -34,6 +35,7 @@ try {
 
     try{
         const collection = await db.collection(ASTRA_DB_COLLECTION)
+
         const cursor = collection.find(null, {
             sort: {
                 $vector: embedding.data[0].embedding,
@@ -43,7 +45,7 @@ try {
 
         const documents = await cursor.toArray()
 
-        documents?.map(doc => doc.text)
+        const docsMap = documents?.map(doc => doc.text)
 
         docContext = JSON.stringify(docsMap)
 
@@ -75,16 +77,17 @@ try {
         `
     }
 
-    await openai.chat.completions.create({
+    const response = await openai.chat.completions.create({
         model: "gpt-4",
         stream: true,
-        messages: [template,... messages]
+        messages: [template, ...messages]
     });
 
     const stream = OpenAIStream(response)
     return new StreamingTextResponse(stream)
 
-
-    } 
+    } catch (err){
+    //TODO : UPDATE WITH CORRECT INFO
+    }
 
 }

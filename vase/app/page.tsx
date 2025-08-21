@@ -4,7 +4,7 @@ import Image from 'next/image'
 import lotus from './assets/lotus.jpg'
 
 import { useChat } from '@ai-sdk/react';
-import { Message } from "ai";
+import type { Message } from 'ai';
 
 import Bubble from './components/Bubble';
 import LoadingBubble from './components/LoadingBubble';
@@ -12,7 +12,7 @@ import PromptSuggestionsRow from './components/PromptSuggestionsRow';
 
 const Home = () => {
     
-    const { append, messages, input, handleSubmit, handleInputChange, isLoading } =
+    const { messages, append, input, handleSubmit, handleInputChange, isLoading } =
     useChat();
 
     const noMessages = !messages || messages.length === 0;
