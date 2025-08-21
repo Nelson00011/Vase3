@@ -20,8 +20,8 @@ const Home = () => {
     const handlePrompt = (promptText) => {
         const msg: Message = {
             id: crypto.randomUUID(),
-            context: promptText,
-            role: "user"
+            role: "user",
+            content: promptText
         }; 
         
         append(msg)
