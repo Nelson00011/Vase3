@@ -1,6 +1,5 @@
 <h1 align="center">Vase3</h1>
 
-`main image`
 
 ## Description:
 Study for Language Learning Models (LLM); Build a Fullstack with Retrieval-Augmented Generation (RAG) application. Basic application for fun practice and Vase building. The Expression *One Vase A day will teach you more than spending hours trying to perfectly make one vase.* 
@@ -15,15 +14,11 @@ Study for Language Learning Models (LLM); Build a Fullstack with Retrieval-Augme
 ## Screen Shots:
 <p align="center">Please reference the screenshot folder for more available images</p>
 
-`selected image 1`
-
-`selected image 2`
-
-`selected image 3`
+<img width="965" height="860" alt="image" src="https://github.com/user-attachments/assets/0bfc0480-57a5-470a-9e18-d5a44480d3b2" />
 
 ## Run Code (Environment)
 
-### Front-End Instructions `<examples below>`
+### Front-End Instructions:
 - confirm that config is appropriate:
 ```
 > node -v
@@ -50,7 +45,7 @@ Study for Language Learning Models (LLM); Build a Fullstack with Retrieval-Augme
 > npm run start
 ```
 
-### Back-End Helpful Instructions `<examples below>`
+### Back-End Helpful Instructions:
 - Initial package.json & install dependencies:
     - Must be `cd`'d into backend/server for install
 ```
