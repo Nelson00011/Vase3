@@ -55,7 +55,7 @@ const Home = () => {
             </section>
              <form onSubmit={handleSubmit}>
                     <input className="question-box" 
-                    onChange={handleInputChange} 
+                    onChange={handleAddMessage} 
                     value={input} 
                     placeholder="Ask me something..." />
                     <input type="submit"/>
