@@ -149,8 +149,8 @@ Connect with me on <a href="https://github.com/oakHalo">Oakhalo.dev</a>
 - **Make sure to update billing** in corresponding API's, not everything is free (*give 30 minutes after account set-up for it to activate*)
 - Set Timer's for data loading and transfer, so that I can anticipate future data transfer *pauses* and do research and other things during that time. 
     - **~30 minutes** for vector loading to DataStax
-- check for `s`
-- Always Stay Positive & Triple Check Permissions :)
+    - **Always Stay Positive & Triple Check Permissions** :)
+- check for `s`   
 - When installing packages do it in the correct folder / level :) 
 ```
 >  "type": "module",
