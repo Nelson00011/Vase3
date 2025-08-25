@@ -4,7 +4,7 @@ import Image from 'next/image'
 import lotus from './assets/lotus.jpg'
 
 import { useChat } from '@ai-sdk/react';
-import type { Message } from 'ai';
+// import { Message } from 'ai';
 
 import Bubble from './components/Bubble';
 import LoadingBubble from './components/LoadingBubble';
@@ -13,15 +13,15 @@ import PromptSuggestionsRow from './components/PromptSuggestionsRow';
 const Home = () => {
     
     const { messages, append, input, handleSubmit, handleInputChange, isLoading } =
-    useChat();
+    useChat({ streamProtocol: 'text' });
 
     const noMessages = !messages || messages.length === 0;
 
-    const handlePrompt = (promptText) => {
+    const handleAddMessage = (promptText) => {
         const msg: Message = {
             id: crypto.randomUUID(),
-            role: "user",
-            content: promptText
+            role: 'user',
+            content: promptText,
         }; 
         
         append(msg)
@@ -42,7 +42,7 @@ const Home = () => {
                     </p>
                     <br>
                     </br>
-                    <PromptSuggestionsRow onPromptClick={handlePrompt} />
+                    <PromptSuggestionsRow onPromptClick={handleAddMessage} />
                     
                     </>
                 ) : (

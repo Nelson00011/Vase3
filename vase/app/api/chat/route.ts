@@ -19,7 +19,7 @@ const db = client.db(ASTRA_DB_API_ENDPOINT, {
     namespace: ASTRA_DB_NAMESPACE
 })
 
-export async function POST (req: Request ){
+export async function POST(req: Request ){
 try {
 
     const { messages } = await req.json()
@@ -49,7 +49,7 @@ try {
 
         docContext = JSON.stringify(docsMap)
 
-
+        // TODO: START HERE
     } catch (err){
         console.log(`Error in route.ts... ${err}`)
         docContext = ""
@@ -87,7 +87,7 @@ try {
     return new StreamingTextResponse(stream)
 
     } catch (err){
-    //TODO : UPDATE WITH CORRECT INFO
+      throw err
     }
 
 }
